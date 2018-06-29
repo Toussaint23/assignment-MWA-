@@ -9,7 +9,7 @@ Array.prototype.even = function (){
                         console.log(even1);
                     });
                 }
-                
+
 Array.prototype.odd = function (){
     let odd1 = Array();
     let context = this;

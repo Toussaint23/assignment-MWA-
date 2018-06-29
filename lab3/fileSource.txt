@@ -1,0 +1,10 @@
+Et maintenant, quoi ?
+Si vous pensez que Rx* sera votre bibliothèque de choix, prenez un peu de temps pour vous familiariser avec son énorme liste de fonctions pour transformer, combiner et créer des Observables. Si vous préférez comprendre ces fonctions à l'aides de diagrammes, je vous conseille de regarder l'excellente documentation de RxJava qui fourmille de schémas. Dès que vous bloquez en essayant d'implémenter quelque chose, utilisez ces diagrammes, réfléchissez dessus, regardez la longue liste de fonctions, et réfléchissez à nouveau. Mon expérience tends à prouver que ce processus de résolution de problème est très efficace.
+
+Quand vous commencerez à programmer avec Rx*, il sera indispensable de comprendre les concepts d'observables « Cold » et « Hot ». Ce sont des concepts que l'on se prend de plein fouet à un moment ou à un autre. Vous êtes prévenus, jetez y un œil avant que qu'ils ne vous mordent. Vous pouvez aussi affûter vos connaissances en apprenant la vrai programmation fonctionnelle et comment gérer les choses telles que les effets de bord qui affectent Rx.
+
+Cependant, la PRF n'est pas limitée à Rx. Il y a Bacon.js qui est très intuitive, sans certaines bizarreries que l'on trouve dans Rx. Le langage Elm joue dans sa propre catégorie : c'est un langage de PRF qui est compilé vers du Javascript + HTML + CSS et a un debugger avec voyage dans le temps. Plutôt cool !
+
+La PRF marche très bien pour les frontends et les application avec beaucoup d'événements. Ce n'est pourtant pas juste un truc à utiliser coté client, ça marche aussi très bien coté serveur et proche des bases de données. D'ailleurs, RxJava est un composant clé dans la gestion de la concurrence derrière l'API Netflix. La PR fonctionnelle n'est pas réservée à un type d'application ou à un langage. C'est un paradigme que vous pouvez appliquer dans n'importe quel programme qui est structuré par des évènements.
+
+Si ce tutoriel vous a aidé, faîtes le suivre sur twitter et ailleurs.
