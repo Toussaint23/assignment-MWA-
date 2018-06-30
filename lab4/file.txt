@@ -1,0 +1,10 @@
+The os.cpus() method returns an array of objects containing information about each logical CPU core.
+The properties included on each object include:
+model <string>
+speed <number> (in MHz)
+times <Object>
+user <number> The number of milliseconds the CPU has spent in user mode.
+nice <number> The number of milliseconds the CPU has spent in nice mode.
+sys <number> The number of milliseconds the CPU has spent in sys mode.
+idle <number> The number of milliseconds the CPU has spent in idle mode.
+irq <number> The number of milliseconds the CPU has spent in irq mode.
