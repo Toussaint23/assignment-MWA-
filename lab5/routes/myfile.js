@@ -23,7 +23,7 @@ router.get('/',(req, res, next)=>{
 }); */
 
 
-//using async await
+/* //using async await
 async function asyncAwait(req, res, next){
     try{
         let result = await axios.get('http://jsonplaceholder.typicode.com/users/');
@@ -38,5 +38,56 @@ async function asyncAwait(req, res, next){
 router.get('/', (req, res, next)=>{
     asyncAwait(req, res, next);
 });
+ */
+
+/* // GET request for remote image
+router.get('/', (req, res, next)=>{
+
+    axios({
+        method:'get',
+        url:'http://jsonplaceholder.typicode.com/users/',
+        responseType:'json'
+    })
+    .then(function(response) {
+        res.send(response.data);
+    });
+
+}); */
+
+
+/* // GET request for remote image
+router.get('/', (req, res, next)=>{
+    let value = axios({
+        method:'get',
+        url:'http://jsonplaceholder.typicode.com/users/',
+        responseType:'json'
+    });
+
+    from(value).subscribe(function(response) {res.send(response.data);});
+
+});
+ */
+
+ async function myAsyncFunction(res){
+     try{
+        let value =  await axios({
+            method:'get',
+            url:'http://jsonplaceholder.typicode.com/users/',
+            responseType:'json'
+        });
+
+        res.send(value.data);
+
+     }catch(err){
+         console.error(err);
+     }
+
+ }
+
+ router.get('/', (req, res, next)=>{
+    myAsyncFunction(res);
+ });
+
+
 
 module.exports = router;
